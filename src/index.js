@@ -20,6 +20,7 @@ app.use(createLoading());
 
 // 3. Register global model
 app.model(require('./models/global').default);
+// app.model(require('./models/login').default);
 
 // 4. Router
 app.router(require('./router').default);
@@ -28,3 +29,5 @@ app.router(require('./router').default);
 app.start('#root');
 
 export default app._store;  // eslint-disable-line
+console.log(app._store);
+
